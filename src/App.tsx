@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Booking from "./pages/Booking";
 import NotFound from "./pages/NotFound";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/offers" element={<div className="p-8 text-center">Offers page coming soon!</div>} />
               <Route path="/gallery" element={<div className="p-8 text-center">Gallery page coming soon!</div>} />
               <Route path="/contact" element={<div className="p-8 text-center">Contact page coming soon!</div>} />
+              <Route path="/admin" element={<AdminDashboard />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
