@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Calendar, Phone } from "lucide-react";
+import { Menu, X, Calendar, Phone, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -47,6 +47,12 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="outline" size="sm" asChild>
+              <Link to="/admin" className="flex items-center gap-2">
+                <Shield className="w-4 h-4" />
+                Admin
+              </Link>
+            </Button>
+            <Button variant="outline" size="sm" asChild>
               <a href="tel:+1234567890" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 Call Now
@@ -89,6 +95,12 @@ const Header = () => {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-3">
+                <Button variant="outline" size="sm" asChild>
+                  <Link to="/admin" className="flex items-center justify-center gap-2" onClick={() => setIsMenuOpen(false)}>
+                    <Shield className="w-4 h-4" />
+                    Admin
+                  </Link>
+                </Button>
                 <Button variant="outline" size="sm" asChild>
                   <a href="tel:+1234567890" className="flex items-center justify-center gap-2">
                     <Phone className="w-4 h-4" />
