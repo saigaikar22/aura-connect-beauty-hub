@@ -9,6 +9,12 @@ import Home from "./pages/Home";
 import Booking from "./pages/Booking";
 import NotFound from "./pages/NotFound";
 import AdminDashboard from "./pages/AdminDashboard";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Products from "./pages/Products";
+import Offers from "./pages/Offers";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -24,12 +30,12 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/booking" element={<Booking />} />
-              <Route path="/about" element={<div className="p-8 text-center">About page coming soon!</div>} />
-              <Route path="/services" element={<div className="p-8 text-center">Services page coming soon!</div>} />
-              <Route path="/products" element={<div className="p-8 text-center">Products page coming soon!</div>} />
-              <Route path="/offers" element={<div className="p-8 text-center">Offers page coming soon!</div>} />
-              <Route path="/gallery" element={<div className="p-8 text-center">Gallery page coming soon!</div>} />
-              <Route path="/contact" element={<div className="p-8 text-center">Contact page coming soon!</div>} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/offers" element={<Offers />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/admin" element={<AdminDashboard />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
