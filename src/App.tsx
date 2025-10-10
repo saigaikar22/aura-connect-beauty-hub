@@ -13,7 +13,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Offers from "./pages/Offers";
-import Gallery from "./pages/Gallery";
+import CompareProducts from "./pages/CompareProducts";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -36,7 +36,7 @@ const App = () => (
               <Route path="/services" element={<Services />} />
               <Route path="/products" element={<Products />} />
               <Route path="/offers" element={<Offers />} />
-              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/compare" element={<CompareProducts />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signin" element={<SignIn />} />
               <Route path="/signup" element={<SignUp />} />
